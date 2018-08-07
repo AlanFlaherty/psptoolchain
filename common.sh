@@ -51,6 +51,8 @@ function download_and_extract
     [ -f $name ] || wget --no-check-certificate $url -O $name && auto_extract $name
 }
 
+## TODO: download from github
+
 # Clones or updates a Git repository.
 # Usage: clone_git_repo <hostname> <user> <repo> <branch>
 function clone_git_repo
